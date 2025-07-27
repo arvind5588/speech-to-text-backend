@@ -6,10 +6,10 @@ This project provides a pure functional style Node.js WebSocket server integrate
 
 speech-to-text-backend/
 ├── lambda/
-│   └── index.js                   # AWS Lambda handler (pure functional)
+│ └── index.js # AWS Lambda handler
 ├── websocket/
-│   └── websocketGateway.js        # Node.js WebSocket server  
-├── package.json                   # npm dependencies
+│ └── websocketGateway.js # Node.js WebSocket server
+├── package.json # npm dependencies
 ├── README.md
 └── .gitignore
 
