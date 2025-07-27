@@ -1,0 +1,25 @@
+{
+  "name": "speech-to-text-backend",
+  "version": "1.0.0",
+  "description": "Pure functional Node.js WebSocket server with AWS Lambda integration for speech-to-text backend",
+  "main": "websocket/websocketGateway.js",
+  "scripts": {
+    "start": "node websocket/websocketGateway.js",
+    "lint": "eslint .",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "author": "Arvind Prajapati",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1353.0",
+    "express": "^4.18.2",
+    "ws": "^8.13.0",
+    "@aws-sdk/client-transcribe-streaming": "^3.350.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

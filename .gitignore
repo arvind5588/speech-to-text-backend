@@ -1,0 +1,11 @@
+node_modules/
+.env
+.DS_Store
+npm-debug.log*
+logs/
+dist/
+.vscode/
+.idea/
+*.log
+lambda/node_modules/
+websocket/node_modules/
