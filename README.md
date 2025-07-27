@@ -4,25 +4,32 @@ This project provides a pure functional style Node.js WebSocket server integrate
 
 ## Project Structure
 
+```
 speech-to-text-backend/
 ├── lambda/
-│ └── index.js # AWS Lambda handler
+│   └── index.js                # AWS Lambda handler
 ├── websocket/
-│ └── websocketGateway.js # Node.js WebSocket server
-├── package.json # npm dependencies
+│   └── websocketGateway.js     # Node.js WebSocket server
+├── package.json                # npm dependencies
 ├── README.md
 └── .gitignore
-
+```
 
 ## Getting Started
 
-1. Install dependencies:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-2. Start the WebSocket server locally:
+2. **Start the WebSocket server locally:**
+   ```bash
+   npm start
+   ```
+   
+   The WebSocket server listens on port 3000 by default.
 
-The WebSocket server listens on port 3000 by default.
-
-3. Deploy the Lambda function `lambda/index.js` on AWS Lambda, and set the function name in the WebSocket server's AWS Lambda invoke function.
+3. **Deploy the Lambda function** `lambda/index.js` on AWS Lambda, and set the function name in the WebSocket server's AWS Lambda invoke function.
 
 ## Notes on HIPAA Compliance and Production Usage
 
@@ -32,4 +39,4 @@ The WebSocket server listens on port 3000 by default.
 
 ## License
 
-MIT License. See LICENSE for more details.
+MIT License.
